@@ -1,6 +1,16 @@
+const header = document.querySelector("header");
+
 /* --------------- Grab elements from DOM --------------- */
 
 /* --------------- Sticky Navbar --------------- */
+
+function stickyNavBar() {
+    header.classList.toggle("scrolled", window.pageYOffset > 0);
+}
+
+stickyNavBar();
+
+window.addEventListener("scroll", stickyNavBar);
 
 /* --------------- Reveal Animation --------------- */
 
