@@ -461,6 +461,107 @@ header.scrolled .logo{
 
 /* --------------- Skills Section Styling --------------- */
 
+/* PRIMER DISEÑO */ 
+
+.skills{
+  overflow: hidden;
+}
+
+.skills-box{
+  /*background-color: var(--bg-color-2);*/
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 5rem 6rem;
+  width: 100%;
+}
+
+.box-desc{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+/* SEGUNDO DISEÑO */
+
+.skills__container{
+  row-gap: 3.5rem;
+}
+
+.skills__title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+  margin-bottom: 2.5rem;
+}
+
+.skills__title i{
+  font-size: 1rem;
+  font-weight: initial;
+}
+
+.skills__info,
+.skills__data,
+.skills__blob{
+  display: grid;
+}
+
+.skills__info{
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+.skills__data{
+  justify-content: center;
+  text-align: center;
+}
+
+.skills__blob{
+  width: 80px;
+  height: 100px;
+  background-color: var(--bg-color);
+  border-radius: 3rem;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+
+.skills__blob img{
+  width: 40px;
+}
+
+.skills__name{
+  margin-bottom: .25rem;
+}
+
+.skills__subtitle{
+  color: var(--main-color-1);
+}
+
+/* --------------- Animation Skills --------------- */
+
+.skills__blob:hover img{
+  animation: bounce-skills .6s;
+}
+
+@keyframes bounce-skills{
+  0%{
+    transform: translate(0);
+  }
+  20%{
+    transform: translateY(-6px);
+  }
+  40%{
+    transform: translate(0);
+  }
+  60%{
+    transform: translateY(-3px);
+  }
+  80%{
+    transform: translate(0);
+  }
+}
+
 /* --------------- Sevices Section Styling --------------- */
 
 /* --------------- Portfolio Section Styling --------------- */
